@@ -21,7 +21,7 @@ class CallToDonate extends StatelessWidget {
             height: 200,
             child: Center(
               child: Text(
-                'Total raised so far: £1000',
+                'Total raised so far: £24000',
                 style: TextStyle(
                   fontSize: 40,
                 ),

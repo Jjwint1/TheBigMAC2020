@@ -20,16 +20,13 @@ class _CalculatorContentMobile extends State {
   int haircutValue = 0;
   double totalSavedHaircut = 0;
 
-  int rentValue = 0;
-  double totalSavedRent = 0;
-
   int coffeeValue = 0;
   double totalSavedCoffee = 0;
 
   double totalSaved = 0;
 
   double calculateSaved() {
-    return (totalSavedVK + totalSavedFormals + totalSavedPub + totalSavedHaircut + totalSavedRent + totalSavedCoffee);
+    return (totalSavedVK + totalSavedFormals + totalSavedPub + totalSavedHaircut + totalSavedCoffee);
   }
 
   Widget build(BuildContext context) {
@@ -138,29 +135,6 @@ class _CalculatorContentMobile extends State {
                 setState(() {
                   haircutValue = newValue.round();
                   totalSavedHaircut = haircutValue.toDouble();
-                  totalSaved = calculateSaved();
-                });
-              },
-            ),
-
-            Text(
-              "How much would a week's rent cost you? £"+rentValue.toStringAsFixed(2),
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w200,
-              ),
-            ),
-            Slider(
-              value: rentValue.toDouble(),
-              min: 0.0,
-              max: 200.0,
-              activeColor: Color(0xFF011f4b),
-              inactiveColor: Colors.black12,
-              label: 'Rent',
-              onChanged: (double newValue) {
-                setState(() {
-                  rentValue = newValue.round();
-                  totalSavedRent = rentValue.toDouble();
                   totalSaved = calculateSaved();
                 });
               },

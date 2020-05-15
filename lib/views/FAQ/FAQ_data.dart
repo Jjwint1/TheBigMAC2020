@@ -40,9 +40,8 @@ const String Q6 =
 
 const String A6 =
     "All proceeds will go to Addenbrooke's Charitable Trust and Cambridge's Centre for the Study of Existential Risk (CESR). "
-    "Money to Addenbrooke's will help tackle the here and now through providing PPE and support for NHS staff, and money "
-    "to CESR will help prevent future pandemics occurring through research which will be presented to policy makers so "
-    "we can change tomorrow through what we are doing today.";
+    "Money to Addenbrooke's will help tackle the here and now, going towards resesarch for diagnostic tests and providing "
+    "vital support for patients and staff in the ICU that goes above and beyond what the NHS would provide.";
 
 const String Q7 =
     "How were the charities selected?";
